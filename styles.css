@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 11px 40px;
+  background-color: transparent;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-yellow {
+  background-color: #dad873;
+  color: #309975;
+}
+
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(107.56deg, #309975 0%, #58b368 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 233px 0px 158px;
+  align-items: center;
+}
+
+.header__top-logo {
+  display: flex;
+  align-items: center;
+  gap: 13.5px;
+}
+
+.header__top-logo img {
+  width: 36px;
+  display: block;
+}
+
+.header__top-logo h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header__top-navbar {
+  display: flex;
+  list-style: none;
+  gap: 75px;
+}
+
+.header__top-navbar li {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__top-navbar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__top-navbar li a:hover {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header__top-navbar li span {
+  background-color: #dad873;
+  height: 2px;
+  width: 0px;
+  transition: width 0.3s ease-in-out;
+}
+
+.header__top-navbar li a:hover ~ span {
+  width: 60%;
+}
+
+.header_bottom {
+  padding: 83px 79px 0px 144px;
+  flex: 1;
+  background-image: url(./img/profile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.header__bottom-title {
+  font-size: 80px;
+  font-weight: 700;
+  color: white;
+  width: 550px;
+  border-bottom: 3px solid white;
+  line-height: 88.4px;
+}
+
+.header__bottom-info {
+  display: flex;
+  width: 650px;
+  justify-content: space-between;
+  color: white;
+  margin-top: 42px;
+}
+
+.header__bottom-info h3 {
+  font-size: 48px;
+  font-weight: 700;
+  width: 137px;
+}
+
+.header__bottom-info h3 span {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header_bottom .btn {
+  margin-top: 171px;
+  padding: 22px 35px;
+  font-size: 24px;
+}
